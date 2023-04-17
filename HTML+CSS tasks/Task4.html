@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Task4.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+
+    <div class="container">
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+          <div class="input-field">
+            <label for="fname">First name</label>
+            <input type="text" value="" name="fname" id="fname" />
+          </div>
+          <div class="input-field">
+            <label for="Lname">Last name</label>
+            <input type="text" value="" name="Lname" id="Lname" />
+          </div>
+          <div class="input-field1">
+            <label for="email">Email address</label>
+            <input type="email" value="" name="email" id="email" />
+          </div>
+          <div class="input-field2">
+            <label for="gender">Gender</label>
+            <input type="radio" ; id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+            <input type="radio" ; id="female" name="gender" value="female" />
+            <label for="female">Female</label>
+          </div>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>City</legend>
+          <div class="space">
+            <label for="city">City</label>
+            <select id="city" name="country">
+              <option value="Amman">Amman</option>
+              <option value="Zarqa">Zarqa</option>
+              <option value="Irbid">Irbid</option>
+            </select>
+          </div>
+        </fieldset>
+        <button>Subscribe</button>
+      </form>
+    </div>
+  </body>
+</html>

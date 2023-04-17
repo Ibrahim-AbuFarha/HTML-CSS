@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      h1 {
+        color: blue;
+      }
+
+      .form {
+        color: blue;
+
+        text-align: center;
+      }
+      .label {
+        display: block;
+      }
+      .field {
+        margin-bottom: 20px;
+      }
+      textarea {
+        font-weight: bold;
+      }
+      .btn {
+        padding: 1px 2px 1px 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Dentist Appointment Reservation Form</h1>
+    <form class="form">
+      <div class="field"><b>*Mandatory fields</b></div>
+
+      <div class="field">
+        <label class="label" for="fullname">Full name*: </label>
+        <input id="fullname" placeholder="FirstName LastName" />
+      </div>
+      <div class="field">
+        <label class="label" for="email">Email address*: </label>
+        <input id="email" placeholder="johnDoe@example.com" />
+      </div>
+
+      <div class="field">
+        <label class="label" for="service">Select the needed service*:</label>
+
+        <select id="service" name="service">
+          <option value="Whitening">Whitening</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label class="label" for="date">Appointment date*: </label>
+        <input id="date" type="date" />
+      </div>
+
+      <div class="field">
+        <label class="label" for="time">Appointment time*: </label>
+        <input id="time" type="time" />
+      </div>
+
+      <div class="field">
+        <p>Doctor’s preferred gender*:</p>
+
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label><br />
+
+        <input type="radio" id="female" name="gender" value="male" />
+        <label for="female">Female</label>
+      </div>
+
+      <div class="field">
+        <label class="label" for="note">Special Note:</label>
+
+        <textarea id="note" cols="50" rows="10">Enter text here</textarea>
+      </div>
+
+      <div class="field">
+        <p>Terms and conditions*</p>
+
+        <input type="radio" id="agree" value="agree" />
+        <label for="agree">I agree</label>
+
+        <input type="radio" id="disagree" value="disagree" />
+        <label for="disagree">I disagree</label>
+      </div>
+
+      <input class="btn" type="button" value="Complete reservation" />
+    </form>
+  </body>
+</html>

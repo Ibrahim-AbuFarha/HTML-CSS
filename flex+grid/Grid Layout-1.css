@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: white;
+  font-size: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  margin: 50px;
+  padding: 50px;
+  gap: 10px;
+  width: 650px;
+  
+ 
+}
+.a,
+.c,
+.d ,.b{
+  background-color: #444444;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+.a {
+  grid-column: span 2;
+}
+.b{
+    grid-column: 4/5;
+}
+.d {
+  grid-column: span 3;
+  display: grid;
+  padding: 20px;
+}
+.d div {
+  background-color: #cccccc;
+  width: 50%;
+  justify-self: end;
+  padding: 10px;
+  border-radius: 5px;
+}
+p{
+  color: #3e3e3e;  
+  padding: 10px;
+}

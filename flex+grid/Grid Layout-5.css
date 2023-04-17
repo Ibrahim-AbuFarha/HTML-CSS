@@ -1,0 +1,48 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    
+    max-width: 1100px;
+    height: 450px;
+    margin-inline: auto;
+    gap: 3px;
+    font-family: sans-serif;
+    font-size: 20px;
+    }
+    
+    .one{
+    background-color:#ff9b6d ;
+    grid-row: span 6;
+    
+    
+    }
+    
+    .two{
+        background-color: #ffd37c;
+       grid-column: 2/6;
+    }
+    
+    .three{
+        background-color: #c8d878;
+        grid-column: span 3;
+    }
+    
+    .four{
+        background-color: #7dbca9;
+        
+       
+     }
+    
+    .five{
+        background-color: #87ceeb;
+        grid-column: span 4;
+        grid-row: span 4;
+
+        
+    }
+    .container div{
+        color: white;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
